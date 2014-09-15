@@ -36,3 +36,21 @@ app.preloader = {
 	}
 
 }
+
+/* checking for view slide direction */
+app.slideDirectionForward = true;
+
+app.checkSlideDirection = function(){
+
+	if(app.slideDirectionForward) {
+
+		return 'forwards';
+
+	} else {
+
+		app.slideDirectionForward = true;
+		return 'backwards';
+
+	}
+
+};

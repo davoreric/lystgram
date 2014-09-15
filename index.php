@@ -9,7 +9,7 @@
 
 	<div id="fb-root"></div>
 
-	<div class="appWrap" ng-view></div>
+	<div class="appWrap {{ slideDir }}" ng-view></div>
 
 	<?php include "include/js.php"; ?>
 

@@ -27,6 +27,7 @@ a {
 
 	@include transition (all .25s ease-in);
 	position: absolute; width: 100%; height: 100%; overflow: auto;
+	background-color: $color01;
 
 	&.ng-enter {
 
@@ -42,13 +43,25 @@ a {
 
 	&.ng-leave {
 
-		left: 0;
+		opacity: 1;
 
 	}
 
 	&.ng-leave.ng-leave-active {
 
-		left: -100%;
+		opacity: 0;
+
+	}
+
+	&.backwards.ng-enter {
+
+		right: 100%;
+
+	}
+
+	&.backwards.ng-enter.ng-enter-active {
+
+		right: 0;
 
 	}
 

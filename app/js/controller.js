@@ -6,13 +6,33 @@
 
 app.controller = function(){
 
+	lyst.run(function($rootScope,$location) {
+        
+        $rootScope.goBack = function(url) {
+            
+            $rootScope.slideDir = 'backwards';
+			app.slideDirectionForward = false;
+			$location.path(url);
+
+        };
+
+    });
+
+	lyst.controller('homeController', function($scope) {
+
+		$scope.slideDir = app.checkSlideDirection();
+
+	});
+
 	lyst.controller('newController', function($scope) {
 
-		//$location.path('/search');
+		$scope.slideDir = app.checkSlideDirection();
 
 	});
 
 	lyst.controller('searchController', function($scope) {
+
+		$scope.slideDir = app.checkSlideDirection();
 
 		$scope.submitForm = function() {
 
@@ -33,8 +53,9 @@ app.controller = function(){
 
 	});
 
-	lyst.controller('loginController', ['$scope', '$location', function($scope, $location) {
+	lyst.controller('loginController', function($scope, $location) {
 
+		$scope.slideDir = app.checkSlideDirection();
 		$scope.button = 'facebook login';
 		$scope.message = 'Create and listen music playlists and share them with your friends. By logging in you accept ours terms of service.';
 		
@@ -67,15 +88,17 @@ app.controller = function(){
 
 		};
 
-	}]);
+	});
 
-	lyst.controller('optionController', function($scope) {
+	lyst.controller('optionController', function($scope,$location) {
+
+		$scope.slideDir = app.checkSlideDirection();
 		
 		$scope.logout = function(){
 
 			FB.logout(function() {
 
-				window.reload();
+				$location.path('/');
 
 			});
 			
