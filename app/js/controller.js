@@ -24,7 +24,7 @@ app.controller = function(){
 
 	});
 
-	lyst.controller('newController', function($scope) {
+	lyst.controller('playlistController', function($scope) {
 
 		$scope.slideDir = app.checkSlideDirection();
 
@@ -38,8 +38,16 @@ app.controller = function(){
 
 			$.get('https://www.googleapis.com/youtube/v3/search?part=snippet&q='+$scope.term+'&key='+app.youTubeApiKey,function(data){
 
-				$scope.videos = data.items;
-				$scope.$apply();
+				if( pageInfo.totalResults == 0 ){
+
+					alert('No results found!');
+
+				} else {
+
+					$scope.videos = data.items;
+					$scope.$apply();
+
+				}
 
 			});
 
@@ -47,7 +55,7 @@ app.controller = function(){
 
 		$scope.addToPlaylist = function(){
 
-			console.log('video added to playlist!');
+			alert('video added to playlist!');
 
 		};
 

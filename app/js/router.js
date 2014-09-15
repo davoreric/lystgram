@@ -45,9 +45,9 @@ app.router = function(){
 				controller  : 'loginController'
 			})
 
-			.when('/new', {
-				templateUrl : 'templates/new.tpl',
-				controller  : 'newController',
+			.when('/playlist', {
+				templateUrl : 'templates/playlist.tpl',
+				controller  : 'playlistController',
 				resolve: requireAuthentication()
 			})
 

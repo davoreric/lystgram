@@ -2,7 +2,7 @@
 
 	<header class="smallHead">
 		<h1>Search</h1>
-		<a ng-click="goBack('/new')" class="back">back</a>
+		<a ng-click="goBack('/playlist')" class="back">back</a>
 	</header>
 
 	<form class="search" ng-submit="submitForm()">

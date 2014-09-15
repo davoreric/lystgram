@@ -6,7 +6,7 @@
 
 	<section class="selection">
 
-		<a href="/new" class="button">new list</a>
+		<a href="/playlist" class="button">playlist</a>
 		<a href="#" class="button">saved list</a>
 		<a href="#" class="button">friends list</a>
 		<a href="/options" class="button">options</a>
