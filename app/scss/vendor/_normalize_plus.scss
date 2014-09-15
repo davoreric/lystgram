@@ -1,0 +1,30 @@
+/*********************************************************************************************** Reset & Normalize &  & Helpers */
+
+a			{ text-decoration: none; cursor: pointer; }
+a:focus,
+a::-moz-focus-inner { border: 0; outline: none; }
+
+::-webkit-input-placeholder { opacity:1; color: inherit; }
+:-moz-placeholder { opacity:1; color: inherit; }
+::-moz-placeholder { opacity:1; color: inherit; }
+:-ms-input-placeholder { opacity:1; color: inherit; }
+
+:focus::-webkit-input-placeholder { opacity:0; }
+:focus:-moz-placeholder { opacity:0; }
+:focus::-moz-placeholder { opacity:0; }
+:focus:-ms-input-placeholder { opacity:0; }
+
+ol, ul, li, fieldset, h1, h2, h3, h4, p, dl, dt, dd { margin: 0; padding: 0; list-style: none; border: 0; font-size: 1em; }
+
+img { font-style:italic; vertical-align:bottom; }
+
+button,
+input,
+select,
+textarea { font-family: inherit; font-size: 100%; margin: 0; outline: none; @include box-sizing(border-box); border-radius: 0; }
+label { cursor: pointer; }
+em { font-style: normal; }
+
+select { -webkit-appearance: none; }
+
+textarea { overflow: auto; vertical-align: top; resize:vertical; }

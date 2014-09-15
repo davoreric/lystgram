@@ -1,0 +1,30 @@
+/********************************************************************/
+/* LOGIN ************************************************************/
+/********************************************************************/
+
+.login {
+
+	height: 100%;
+	text-align: center;
+
+	.fb {
+
+		@include transition (left .5s ease-in);
+		display: block; position: absolute; top: 50%; left: 50%;
+		margin: -97px 0 0 -97px;
+		background: rgba(255,255,255,.25); border-radius: 50%;
+		font-size: em(16,12); line-height: em(194,16); font-weight: $boldFont;
+		color: darken($color01,5); text-transform: uppercase; letter-spacing: 1px;
+		width: 194px; height: 194px; box-shadow: 0 0 50px rgba(0,0,0,.15);
+
+	}
+
+	
+	
+}
+
+.loading .fb {
+
+	left: -97px;
+
+}

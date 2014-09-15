@@ -1,0 +1,36 @@
+{
+  "name": "Lystgram",
+  "version": "0.0.1",
+
+  "devDependencies": {
+    "jquery": "~2.1.0",
+    "angular": "~1.2.23",
+    "angular-route": "~1.2.24",
+    "angular-animate": "~1.2.23"
+  },
+
+  "authors": [
+    "Davor Erić <info@davoreric.com>"
+  ],
+
+  "description": "Static project for jumpstarting static webs",
+  "keywords": [
+    "static",
+    "project",
+    "empty"
+  ],
+
+  "license": "MIT",
+  "homepage": "https://gitlab.trikoder.net/frontend/static-project",
+  "private": true,
+
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/vendor",
+    "test",
+    "tests"
+  ]
+  
+}

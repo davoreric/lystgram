@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+sass --update --force $(git rev-parse --show-toplevel)/app/scss:$(git rev-parse --show-toplevel)/app/css --style compressed

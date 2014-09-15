@@ -1,0 +1,126 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "6b0c496b3c258a01aaa2a152edc20c8e",
+    "packages": [
+        {
+            "name": "dispatch/dispatch",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/noodlehaus/dispatch.git",
+                "reference": "c4c07527a148d157c320051668da554746bb6790"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/noodlehaus/dispatch/zipball/c4c07527a148d157c320051668da554746bb6790",
+                "reference": "c4c07527a148d157c320051668da554746bb6790",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 5.3.0"
+            },
+            "suggest": {
+                "dispatch/dispatch-extras": "Encryption, caching and more, for dispatch",
+                "dispatch/dispatch-mustache": "mustache template support within dispatch",
+                "giggleboxstudios/dispatch-handlebars": "handlebars template support within dispatch"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/dispatch.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jesus A. Domingo",
+                    "homepage": "http://noodlehaus.github.io/",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Kafene",
+                    "homepage": "https://github.com/kafene",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "Martin Angelov",
+                    "homepage": "https://github.com/martinaglv",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "Lars",
+                    "homepage": "https://github.com/larsbo",
+                    "role": "Developer"
+                },
+                {
+                    "name": "4d47",
+                    "homepage": "https://github.com/4d47",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "Bastian Widmer",
+                    "homepage": "https://github.com/dasrecht",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "Lloyd Zhou",
+                    "homepage": "https://github.com/lloydzhou",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "Darkalemanbr",
+                    "homepage": "https://github.com/darkalemanbr",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "Amin By",
+                    "homepage": "https://github.com/xielingwang",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "Ross Masters",
+                    "homepage": "https://github.com/rmasters",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "Tom Streller",
+                    "homepage": "https://github.com/scan",
+                    "role": "Contributor"
+                }
+            ],
+            "description": "a microframework/front-controller",
+            "homepage": "http://noodlehaus.github.io/dispatch/",
+            "keywords": [
+                "framework",
+                "micro",
+                "microframework",
+                "microphp",
+                "router"
+            ],
+            "time": "2014-06-26 23:51:18"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "dispatch/dispatch": 20
+    },
+    "prefer-stable": false,
+    "platform": {
+        "php": ">= 5.4.0"
+    },
+    "platform-dev": []
+}

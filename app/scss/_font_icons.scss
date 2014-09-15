@@ -1,0 +1,58 @@
+/********************************************************************/
+/* FONT ICONS *******************************************************/
+/********************************************************************/
+
+@font-face { @include font-face(gesund_icons); }
+
+.icon { display: inline-block; position: relative; }
+.icon:before { position: absolute; @include default-icon-font(gesund_icons); }
+
+.icon_rpl { display: inline-block; }
+.icon_rpl span { display: none; }
+.icon_rpl:before { display: block; @include default-icon-font(gesund_icons); }
+
+.fb_icon_circle:before { content: "\e61a"; }
+.tw_icon_circle:before { content: "\e619"; }
+.gp_icon_circle:before { content: "\e618"; }
+.nav_icon:before { content: "\e605" }
+.user_icon:before { content: "\e613"; }
+.users_icon:before { content: "\e611"; }
+.search_icon:before { content: "\e612"; }
+.conversation_icon:before { content: "\e61f"; }
+.message_icon:before { content: "\e620"; }
+.calendar_icon:before { content: "\e61e"; }
+.time_icon:before { content: "\e61d"; }
+.print_icon:before { content: "\e602"; }
+.mail_icon:before { content: "\e603"; }
+.letter_icon:before { content: "\e604"; }
+.fav_icon:before { content: "\e601"; }
+.doctor_icon:before { content: "\e61b"; }
+.edit_icon:before { content: "\e600"; }
+.phone_icon:before { content: "\e62c"; }
+.fax_icon:before { content: "\e62d"; }
+.close_icon:before { content: "\e629"; }
+
+.arrow_right_icon:before { content: "\e60a"; }
+.arrow_left_icon:before { content: "\e609"; }
+.arrow_up_icon:before { content: "\e60b"; }
+.arrow_down_icon:before { content: "\e60c"; }
+
+.arrow_right_icon_2:before { content: "\e608"; }
+
+.arrow_right_up_icon:before { content: "\e61c"; }
+.arrow_pointer_ne_icon:before { content: "\e62b"; }
+
+.star_icon:before { content: "\e607"; }
+.star_empty_icon:before { content: "\e606"; }
+
+.map_pin_icon:before { content: "\e60e"; }
+.nav_v_icon:before { content: "\e62a"; }
+.checkmark_icon:before { content: "\e624"; }
+
+
+
+
+
+
+
+

@@ -1,0 +1,4 @@
+.sass-cache
+.DS_Store
+app/vendor
+lib/vendor
