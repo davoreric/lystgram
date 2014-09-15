@@ -98,7 +98,9 @@ app.controller = function(){
 
 			FB.logout(function() {
 
-				$location.path('/');
+				setTimeout(function(){
+					window.location = '/';
+				},1000);
 
 			});
 			
