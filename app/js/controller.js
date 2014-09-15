@@ -38,7 +38,7 @@ app.controller = function(){
 
 			$.get('https://www.googleapis.com/youtube/v3/search?part=snippet&q='+$scope.term+'&key='+app.youTubeApiKey,function(data){
 
-				if( pageInfo.totalResults == 0 ){
+				if( data.pageInfo.totalResults == 0 ){
 
 					alert('No results found!');
 

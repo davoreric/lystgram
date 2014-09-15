@@ -11,7 +11,7 @@
 
 		<input type="text" ng-model="term" placeholder="Please enter search term..."/>
 
-		<button type="submit">search</button>
+		<button class="button" type="submit">search</button>
 
 	</form>
 

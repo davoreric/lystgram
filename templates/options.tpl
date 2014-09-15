@@ -7,7 +7,7 @@
 
 	<section class="selection">
 
-		<a class="button" ng-click="logout()">logout</a>
+		<a ng-click="logout()">logout</a>
 
 	</section>
 

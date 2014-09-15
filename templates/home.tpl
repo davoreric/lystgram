@@ -6,13 +6,13 @@
 
 	<section class="selection">
 
-		<a href="/playlist" class="button">playlist</a>
-		<a href="#" class="button">saved list</a>
-		<a href="#" class="button">friends list</a>
-		<a href="/options" class="button">options</a>
-
-		<p class="infoText">Create new list, open saved one, or just browse trough your FB friends playlists.</p>
+		<a href="/playlist">playlist</a>
+		<a href="#">saved list</a>
+		<a href="#">friends list</a>
+		<a href="/options">options</a>
 
 	</section>
+
+	<p class="infoText">Create new list, open saved one, or just browse trough your FB friends playlists.</p>
 
 </section>

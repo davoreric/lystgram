@@ -20,18 +20,29 @@
 
 	}
 
-	button {
-
-		@include default-button();
-
-		border: 0; background: darken($color01,5); color: #fff;
-		font-size: em(12,12); line-height: em(18,12); font-weight: $normalFont; text-transform: uppercase;
-		padding: em(20,12) em(10,12); width: 100%;
-
-	}
-
 }
 
 .list {
+
+	a {
+
+		display: block; position: relative;
+		border-top: 1px solid $color01; background: darken($color01,2);
+		padding: 1em; padding-left: 104px; min-height: 60px;
+
+	}
+
+	img {
+
+		position: absolute; top: 1em; left: 1em;
+		width: 80px; height: 60px;
+
+	}
+
+	strong {
+
+		font-weight: $normalFont;
+
+	}
 
 }

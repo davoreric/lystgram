@@ -3,9 +3,12 @@
 	<header class="smallHead">
 		<h1>Playlist</h1>
 		<a ng-click="goBack('/')" class="back">back</a>
-		<a href="/search" class="next">add</a>
+		<!--<a href="/save" class="next">save</a>-->
 	</header>
 
-	NO VIDEOS, PRESS ADD!
+	<section class="notification">
+		<p>Your playlist is currently empty.</p>
+		<a href="/search" class="button">Add videos to playlist</a>
+	</section>
 
 </section>

@@ -7,12 +7,10 @@
 	height: 100%; margin: em(24,12) 0;
 	text-align: center;
 
-	.button {
+	a {
 
 		display: block; padding: em(12,14);
 		border-top: 1px solid $color01; background: darken($color01,5);
-
-
 		font-size: em(14,12); line-height: em(38,14); color: #fff; text-transform: uppercase;
 		
 	}

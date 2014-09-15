@@ -67,6 +67,30 @@ a {
 
 }
 
+.button {
+
+	@include default-button();
+	@include box-sizing(border-box);
+
+	border: 0; background: darken($color01,5); color: #fff;
+	font-size: em(12,12); line-height: em(18,12); font-weight: $normalFont; text-transform: uppercase;
+	padding: em(20,12) em(10,12); width: 100%; text-align: center;
+
+}
+
+.notification {
+
+	padding: 2em;
+	line-height:em(16,12); text-transform: uppercase;
+
+	p {
+
+		margin-bottom: 2em; text-align: center;
+
+	}
+
+}
+
 .infoText {
 
 	padding: 1em;
