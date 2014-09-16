@@ -24,19 +24,46 @@ app.controller = function(){
 
 	});
 
-	lyst.controller('playlistController', function($scope) {
+	lyst.controller('playlistController', function($scope, $location) {
 
 		$scope.slideDir = app.checkSlideDirection();
 
+		var data = app.getLocalPlaylist();
+		
+		if( data === null ){
+
+			$scope.hasContent = false;
+			$scope.buttonText = 'Add videos to playlist';
+
+		} else {
+
+			$scope.hasContent = true;
+			$scope.buttonText = 'Add more videos';
+			$scope.videos = data.videos;
+
+		}
+
+		var self = $scope;
+
+		$scope.clearStorage = function(){
+
+			localStorage.clear();
+
+			setTimeout(function(){
+				window.location = '/';
+			},1000);
+
+		};
+
 	});
 
-	lyst.controller('searchController', function($scope) {
+	lyst.controller('searchController', function($scope,$location) {
 
 		$scope.slideDir = app.checkSlideDirection();
 
 		$scope.submitForm = function() {
 
-			$.get('https://www.googleapis.com/youtube/v3/search?part=snippet&q='+$scope.term+'&key='+app.youTubeApiKey,function(data){
+			$.get('https://www.googleapis.com/youtube/v3/search?part=snippet&q='+$scope.term+'&maxResults=25&key='+app.youTubeApiKey,function(data){
 
 				if( data.pageInfo.totalResults == 0 ){
 
@@ -53,11 +80,23 @@ app.controller = function(){
 
 		};
 
-		$scope.addToPlaylist = function(){
+		$scope.addToPlaylist = function(video){
 
-			alert('video added to playlist!');
+			app.saveLocalPlaylist({
+				name: video.snippet.title,
+				thumb: video.snippet.thumbnails.default.url,
+				id: video.id.videoId
+			});
+
+			$location.path('/playlist');
 
 		};
+
+	});
+
+	lyst.controller('saveController', function($scope) {
+
+		$scope.slideDir = app.checkSlideDirection();
 
 	});
 

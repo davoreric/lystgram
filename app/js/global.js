@@ -54,3 +54,31 @@ app.checkSlideDirection = function(){
 	}
 
 };
+
+/* helper for local storage */
+app.saveLocalPlaylist = function(data){
+
+	var currentValue = JSON.parse(localStorage.getItem('lystgramCurrentPlaylist'));
+
+    if( currentValue === null ) {
+
+    	currentValue = JSON.stringify({
+    		videos: [data]
+    	});
+
+    } else {
+
+    	currentValue.videos[currentValue.videos.length] = data;
+    	currentValue = JSON.stringify(currentValue);
+
+    }
+
+	localStorage.setItem('lystgramCurrentPlaylist', currentValue);
+
+};
+
+app.getLocalPlaylist = function(){
+
+	return JSON.parse(localStorage.getItem('lystgramCurrentPlaylist'));
+
+};

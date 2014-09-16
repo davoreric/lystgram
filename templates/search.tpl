@@ -18,7 +18,7 @@
 	<ul class="list">
 		
 		<li ng-repeat="video in videos">
-			<a ng-click="addToPlaylist()">
+			<a ng-click="addToPlaylist(video)">
 				<strong>{{video.snippet.title}}</strong>
 				<img src="{{video.snippet.thumbnails.default.url}}" />
 			</a>

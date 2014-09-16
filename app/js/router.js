@@ -57,6 +57,12 @@ app.router = function(){
 				resolve: requireAuthentication()
 			})
 
+			.when('/save', {
+				templateUrl : 'templates/save.tpl',
+				controller  : 'saveController',
+				resolve: requireAuthentication()
+			})
+
 			.when('/options', {
 				templateUrl : 'templates/options.tpl',
 				controller  : 'optionController',

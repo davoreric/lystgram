@@ -21,28 +21,3 @@
 	}
 
 }
-
-.list {
-
-	a {
-
-		display: block; position: relative;
-		border-top: 1px solid $color01; background: darken($color01,2);
-		padding: 1em; padding-left: 104px; min-height: 60px;
-
-	}
-
-	img {
-
-		position: absolute; top: 1em; left: 1em;
-		width: 80px; height: 60px;
-
-	}
-
-	strong {
-
-		font-weight: $normalFont;
-
-	}
-
-}
